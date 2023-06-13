@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Tsukimi+Rounded:wght@500&display=swap');
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F8F8F8;
+}
+.parent{
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    
+}
+.child{
+    width: 70%;
+    height: 70vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin-top:5em;
+    
+}
+.r-margin{
+    margin-top: 10%;
+}
+.bottle{
+    width:90%;
+    height: 30vh;
+    margin: 2% 10% ;
+    border-radius: 20px;
+}
+.scale{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 5%;
+}
+.lofo{
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+@media(max-width:1200px) {
+    .bottle{
+        display: none;
+    }
+    .child{
+        width: 90%;
+    } 
+} */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F8F8F8;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+}
+
+.child{
+    width: 70%;
+    height: 80vh;
+    background-color: #FFFFFF;
+    margin-top: 5em;
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.bottle{
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+
+.scale{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 5%;
+}
+
+.button{
+    width: 20vh;
+    height: 2em;
+    background-color:#0082CE;
+    border: none;
+    border-radius: 50px;
+    color: #FFFFFF;
+    margin:2% 25% ;
+}
+.lofo{
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+@media(max-width: 900px) {
+    .child{
+        width: 90%;
+        height: 120vh;
+        margin: 1em;
+    } 
+}
