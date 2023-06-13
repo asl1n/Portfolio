@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="Website Icon" type="png" href="../images/w_logo.png"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ecd1889ea0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Product0.css".css>
+    <title>Irrigation Hub</title>
+</head>
+<body>
+    <div class="background">
+      <a href="Product.html"><button class="mb-2" style="border: none;"><i class="fa-sharp fa-solid fa-arrow-left"></i></button></a>
+        <div class="row">
+            <div class="col-sm-5">
+              <img src="../images/item-3.jpg" class="img-thumbnail" alt="item">
+            </div>
+            <div class="col-sm-5">
+            <h2 class="text-center">Rain and snow sensor</h2> 
+            <p class="text-center price">Price: 13500</p>
+            <h6>Product Description</h6>
+            <p>Model No : VT-SRS01<br>
+              Material:ABS<br>
+              Cable length: 0.5m (standard)<br>
+              Dimension: 89*60*38mm<br>
+              IP Grade: IP68<br>
+              Normal working power: 0.4W<br>
+              Operating power during heating: 2.4W (the heating function is optional)<br>
+              Heating startup environment temperature: below 15 (default value)<br>
+              The maximum heating temperature: 40°C<br>
+              Storage Condition: -40°C~+80°C<br>
+              Power supply: 10-30VDC<br>
+              Output signal: Relay (NO/NC); RS485 <br>
+            </p>
+                <h6>Product Specification</h6>
+                <table>
+                    <tr>
+                        <th>Brand</th>
+                        <td>V-Tech</td>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td>V-Tech</td>
+                    <tr>
+                        <th>Country of Origin</th>
+                        <td>Made in India</td>
+                    </tr>
+                    <tr>
+                        <th>Minimum Order Quantity</th>
+                        <td>1 Piece</td>
+                    </tr>
+                </table>
+                <div class="quantityb mt-3 mb-3">
+                    <h5 class="mr-3">Quantity</h5>
+                    <button id="decrementBtn" class="mr-1">-</button>
+                    <input type="text" id="quantityInput" value="1">
+                    <button id="incrementBtn" class="ml-1">+</button>
+                  </div>
+                  
+                  <button id="buyNowBtn" class="button">Buy Now</button>
+                <button type="button" class="btn  button" data-toggle="modal" data-target="#exampleModal">
+                  Add to cart
+              </button>
+              </div>
+              <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="checkoutModalLabel">Confirm Order Details</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phoneNumber">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="amount">Amount</label>
+                                    <input type="text" class="form-control" id="amount" readonly>
+                                </div>
+                                <p>Note: Payment on Delivery</p>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button id="confirmPaymentBtn" type="button" class="btn btn-primary">Confirm Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+            const decrementBtn = document.getElementById('decrementBtn');
+            const incrementBtn = document.getElementById('incrementBtn');
+            const quantityInput = document.getElementById('quantityInput');
+            const buyNowBtn = document.getElementById('buyNowBtn');
+            const confirmPaymentBtn = document.getElementById('confirmPaymentBtn');
+            const checkoutModal = new bootstrap.Modal(document.getElementById('checkoutModal'));
+        
+            decrementBtn.addEventListener('click', function() {
+                let currentQuantity = parseInt(quantityInput.value);
+                if (currentQuantity > 0) {
+                    quantityInput.value = currentQuantity - 1;
+                }
+            });
+        
+            incrementBtn.addEventListener('click', function() {
+                let currentQuantity = parseInt(quantityInput.value);
+                quantityInput.value = currentQuantity + 1;
+            });
+        
+            buyNowBtn.addEventListener('click', function() {
+                const quantity = parseInt(quantityInput.value);
+                const price = 13500;
+                const totalAmount = quantity * price;
+        
+                document.getElementById('amount').value = totalAmount.toLocaleString('en-IN');
+        
+                checkoutModal.show();
+            });
+        
+            confirmPaymentBtn.addEventListener('click', function() {
+                const address = document.getElementById('address').value;
+                const phoneNumber = document.getElementById('phoneNumber').value;
+                const amount = document.getElementById('amount').value;
+                if (address.trim() === '' || phoneNumber.trim() === '') {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+                checkoutModal.hide();
+                alert('Payment successful! Your order has been placed.');
+            });
+        });
+        
+            </script>
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Item has been added to cart</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <a href="your_cart.html"><button type="button" class="btn btn-primary">Go to cart</button></a>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+    </div>
+  
+</body>
+</html>
