@@ -207,13 +207,13 @@ input[type="text"] {
 
     button[type="top"]{
       border: none;
-     background-image: url(../Img/background.jpg);
+     background-image: url(../Img/Background.jpg);
       padding: 0;
       width: 100%;
       padding-bottom: 20px;
     }
     .back{
-      background-image: url(../Img/background.jpg);
+      background-image: url(../Img/Background.jpg);
     }
     
     
