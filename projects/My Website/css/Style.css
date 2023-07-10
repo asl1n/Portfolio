@@ -10,11 +10,3 @@ body{
     text-decoration: none;
     color: #0d0101;
 }
-.navbar .nav-item a:hover {
-    font-weight: bolder;
-    cursor: pointer;
-  }
-  
-  .navbar .nav-item a:active {
-    color: red;
-  }
