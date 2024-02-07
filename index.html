@@ -74,7 +74,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin-bottom: 15px;
   }
 }
+.swiper-pagination .swiper-pagination-bullet {
+  margin: 5px; 
+  width: 8px; 
+  height: 8px; 
+  background-color: #9214ab; 
+  border-radius: 50%; 
+  opacity: 0.5; 
+  cursor: pointer; 
+  transition: transform 0.3s ease; 
+}
 
+.swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1; 
+  transform: scale(1.2); 
+}
   </style>
 </head>
 <body>
@@ -173,7 +187,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <h6 class="card-title font-weight-bold">Photoshop</h6>
             </div>
         </div>
-            </div>
+            </div> <br>
         <div class="swiper-pagination"></div>
     </div>
 </section>
@@ -213,7 +227,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </div>
-    </div> 
+    </div> <br>
     <div class="swiper-pagination"></div>
   </div>
 </section>
@@ -267,31 +281,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper1", {
+  slidesPerView: 'auto', 
+  centeredSlides: false,
+  slidesPerGroupSkip: 2,
+  grabCursor: true,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // When window width is >= 768px (sm and above)
+    768: {
       slidesPerView: 2,
-      centeredSlides: false,
-      slidesPerGroupSkip: 2,
-      grabCursor: true,
-      keyboard: {
-        enabled: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-    var swiper = new Swiper(".mySwiper2", {
-      slidesPerView: 2,
-      centeredSlides: false,
-      slidesPerGroupSkip: 1,
-      grabCursor: true,
-      keyboard: {
-        enabled: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+    },
+    // When window width is >= 992px (md and above)
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 'auto',
+  centeredSlides: false,
+  slidesPerGroupSkip: 1,
+  grabCursor: true,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // When window width is >= 992px 
+    992: {
+      slidesPerView: 2, 
+    },
+  },
+});
   </script>
   <!-- Google Tag Manager for Google Analytics(noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TR2DZHH"
