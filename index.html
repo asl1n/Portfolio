@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Tag Manager -->
+  <!-- Google Tag Manager for Google Analytics -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -22,6 +22,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <!--For icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- Link Swiper's CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
  <style>
     body {
       padding-top: 50px;
@@ -76,10 +78,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </style>
 </head>
 <body>
-  <!-- Google Tag Manager for Google Analytics(noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TR2DZHH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -131,80 +129,94 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- Skills Section -->
-<section id="skills" class="py-5">
-    <div class="container">
-      <h2 class="text-center">Skills</h2>
-      <div class="row mt-4">
-        <div class="col-md-3">
-          <div class="card shadow">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">Microsoft Office</h6>
+  <section id="skills" class="py-5">
+    <div class="swiper mySwiper1 container">
+            <h2 class="text-center">Skills</h2>
+            <div class="swiper-wrapper mt-4">
+                <div class="swiper-slide card shadow-sm m-2">
+                    <div class="card-body text-center">
+                        <h6 class="card-title font-weight-bold">Microsoft Office</h6>
+                    </div>
+                </div>
+                <div class="swiper-slide card shadow-sm m-2">
+                    <div class="card-body text-center">
+                        <h6 class="card-title font-weight-bold">HTML, CSS, JavaScript</h6>
+                    </div>
+                </div>
+                <div class="swiper-slide card shadow-sm m-2">
+                    <div class="card-body text-center">
+                        <h6 class="card-title font-weight-bold">Wordpress</h6>
+                    </div>
+                </div>
+                <div class="swiper-slide card shadow-sm m-2">
+                    <div class="card-body text-center">
+                        <h6 class="card-title font-weight-bold">Java, JavaFX</h6>
+                    </div>
+                </div>
+                <div class="swiper-slide card shadow-sm m-2">
+                  <div class="card-body text-center">
+                      <h6 class="card-title font-weight-bold">UI/UX designer</h6>
+                  </div>
+              </div>
+              <div class="swiper-slide card shadow-sm m-2">
+                <div class="card-body text-center">
+                    <h6 class="card-title font-weight-bold">Video Editing</h6>
+                </div>
             </div>
+            <div class="swiper-slide card shadow-sm m-2">
+              <div class="card-body text-center">
+                  <h6 class="card-title font-weight-bold">Content Writting</h6>
+              </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card shadow">
+          <div class="swiper-slide card shadow-sm m-2">
             <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">HTML, CSS, JavaScript</h6>
+                <h6 class="card-title font-weight-bold">Photoshop</h6>
             </div>
-          </div>
         </div>
-        <div class="col-md-3">
-          <div class="card shadow">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">MySQL</h6>
             </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card shadow">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">Java</h6>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div class="swiper-pagination"></div>
     </div>
-  </section>  
+</section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <img src="image/P-1.jpg" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Ecommerce website</h5>
-              <p class="card-text">Ecommerce Page for Smart Irrigation System.</p>
-              <a href="projects/Software-Engineering-Project-main/index/index.html" target="_blank" class="btn btn-primary">Check</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <img src="image/P-2.jpg" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-              <h5 class="card-title">Landing Page</h5>
-              <p class="card-text">A simple Not responsive page which people might like.</p>
-              <a href="projects/landing page/index.html" target="_blank" class="btn btn-primary">Check</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <img src="image/P-3.jpg" class="card-img-top" alt="Project 3">
-            <div class="card-body">
-              <h5 class="card-title">Page</h5>
-              <p class="card-text">A simple and responsive page that I made.</p>
-              <a href="projects/My Website/Index.html" target="_blank" class="btn btn-primary">Check</a>
-            </div>
+<section id="projects" class="py-5">
+  <div class="swiper mySwiper2 container">
+    <h2>My Projects</h2>
+    <div class="swiper-wrapper mt-3">
+      <div class="swiper-slide" style="margin: 10px;"> 
+        <div class="card">
+          <img src="image/P-1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Ecommerce website</h5>
+            <p class="card-text">Ecommerce Page for Smart Irrigation System.</p>
+            <a href="projects/Software-Engineering-Project-main/index/index.html" target="_blank" class="btn btn-primary">Check</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="swiper-slide" style="margin: 10px;"> 
+        <div class="card">
+          <img src="image/P-2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Landing Page</h5>
+            <p class="card-text">A simple Not responsive page which people might like.</p>
+            <a href="projects/landing page/index.html" target="_blank" class="btn btn-primary">Check</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="margin: 10px;"> 
+        <div class="card">
+          <img src="image/P-3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Page</h5>
+            <p class="card-text">A simple and responsive page that I made.</p>
+            <a href="projects/My Website/Index.html" target="_blank" class="btn btn-primary">Check</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-5">
@@ -249,7 +261,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>&copy;2023 [Copyright Aslin Karmacharya]. All Rights Reserved.</p>
     </div>
   </footer>
-  <!-- Google Tag Manager for Google Analytics (noscript) -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+      slidesPerView: 4,
+      centeredSlides: false,
+      slidesPerGroupSkip: 2,
+      grabCursor: true,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 2,
+      centeredSlides: false,
+      slidesPerGroupSkip: 1,
+      grabCursor: true,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <!-- Google Tag Manager for Google Analytics(noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TR2DZHH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
