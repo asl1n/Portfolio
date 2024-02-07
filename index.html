@@ -247,7 +247,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="row">
             <div class="col-lg-6">
                 <h2>Contact Me</h2>
-                <form action="contact.php" method="post">
+                <form onsubmit="validateAndSend(); return false;">
                   <div class="form-group">
                       <label for="name">Name</label>
                       <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
@@ -257,11 +257,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
                   </div>
                   <div class="form-group">
+                      <label for="number">Phone no.</label>
+                      <input type="text" class="form-control" id="number" name="number" placeholder="Enter your number">
+                  </div>
+                  <div class="form-group">
                       <label for="message">Message</label>
                       <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
-              </form>              
+              </form>
+  <!-- Bootstrap modal for "Please fill in all fields" -->
+              <div class="modal fade" id="fillInModal" tabindex="-1" role="dialog" aria-labelledby="fillInModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="fillInModalLabel">Error!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Please fill in all fields.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+  <!-- Bootstrap modal for success-->
+            <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="successModalLabel">Success!</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          Your message has been sent successfully.
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
             </div>
             <div class="col-lg-6 mt-5">
               <i class="fa-sharp fa-solid fa-envelope fa-lg"></i><h4 style="display: inline-block; margin-left: 5px; margin-bottom: 0; margin-top: 0;">Email</h4>
@@ -285,7 +329,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </footer>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper1", {
@@ -331,6 +374,40 @@ var swiper = new Swiper(".mySwiper2", {
     },
   },
 });
+  </script>
+  <!--For email using JS-->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+      function validateAndSend() {
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var number = document.getElementById("number").value;
+          var message = document.getElementById("message").value;
+  
+          // Validate fields
+          if (name.trim() === "" || email.trim() === "" || number.trim() === "" || message.trim() === "") {
+              $('#fillInModal').modal('show');
+              return;
+          }
+  
+          // If all fields are filled, call sendEmail
+          sendEmail();
+      }
+  
+      function sendEmail() {
+          Email.send({
+              SecureToken: "af4e13d7-64ea-4a63-bf43-f38ec5d164b7 ", 
+              To: "aslin1799@gmail.com",
+              From: document.getElementById("email").value,
+              Subject: "Contact Form Submission",
+              Body: "Name: " + document.getElementById("name").value + "<br>" +
+                  "Email: " + document.getElementById("email").value + "<br>" +
+                  "Phone: " + document.getElementById("number").value + "<br>" +
+                  "Message: " + document.getElementById("message").value
+          }).then(function (message) {
+              $('#successModal').modal('show');
+          });
+      }
   </script>
   <!-- Google Tag Manager for Google Analytics(noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TR2DZHH"
