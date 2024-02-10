@@ -221,8 +221,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <img src="image/P-2.jpg" class="card-img-top" alt="Project 2">
           <div class="card-body">
             <h5 class="card-title">Wordpres Site</h5>
-            <p class="card-text">A Wordpress site that I made (coming soon).</p>
-            <a href="#" target="_blank" class="btn btn-primary">Check</a>
+            <p class="card-text">A Wordpress site that I made for fun.</p>
+            <a href="https://streamable.com/4n7l88" target="_blank" class="btn btn-primary">Check</a>
           </div>
         </div>
       </div>
@@ -267,7 +267,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="row">
             <div class="col-lg-6">
                 <h2>Contact Me</h2>
-                <form onsubmit="validateAndSend(); return false;">
+                <form onsubmit="validateAndSend(); reset();return false;">
                   <div class="form-group">
                       <label for="name">Name</label>
                       <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
@@ -419,7 +419,7 @@ var swiper = new Swiper(".mySwiper2", {
       function sendEmail() {
           Email.send({
               SecureToken: "af4e13d7-64ea-4a63-bf43-f38ec5d164b7 ", 
-              To: "aslin1799@gmail.com",
+              To: "aslinkarmacharya@gmail.com",
               From: document.getElementById("email").value,
               Subject: "Contact Form Submission",
               Body: "Name: " + document.getElementById("name").value + "<br>" +
