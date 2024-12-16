@@ -24,81 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <!-- Link Swiper's CSS -->
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
- <style>
-    body {
-      padding-top: 50px;
-      background-color: #f5f5f5;
-      font-family: 'Montserrat', sans-serif;
-    }
-    .jumbotron {
-      background-color: #333;
-      color: #fff;
-      padding: 100px 25px;
-    }
-    .btn-primary {
-  background-color: #6c077e !important;
-  border-color: #6c077e !important;
-}
-
-.btn-primary:hover {
-  background-color: #581e63 !important;
-  border-color: #581e63 !important;
-}
-.btn-primary:focus,
-.btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem #dc59f3 !important;
-  border-color: #dc59f3 !important;
-}
-
-.card {
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card-title {
-  font-size: 1.2rem;
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-.card-body {
-  padding: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .card {
-    margin-bottom: 15px;
-  }
-}
-.swiper-pagination .swiper-pagination-bullet {
-  margin: 5px; 
-  width: 8px; 
-  height: 8px; 
-  background-color: #9214ab; 
-  border-radius: 50%; 
-  opacity: 0.5; 
-  cursor: pointer; 
-  transition: transform 0.3s ease; 
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-  opacity: 1; 
-  transform: scale(1.2); 
-}
-.contact-info {
-            color: black; 
-            text-decoration: none;
-            transition: color 0.2s; 
-        }
-
-        .contact-info:hover {
-            color: blue; 
-        }
-  </style>
+ <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
   <!-- Navbar -->
@@ -156,11 +82,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="swiper mySwiper1 container">
             <h2 class="text-center">Skills</h2>
             <div class="swiper-wrapper mt-4">
-                <div class="swiper-slide card shadow-sm m-2">
-                    <div class="card-body text-center">
-                        <h6 class="card-title font-weight-bold">Microsoft Office</h6>
-                    </div>
+              <div class="swiper-slide card shadow-sm m-2">
+                <div class="card-body text-center">
+                    <h6 class="card-title font-weight-bold">React</h6>
                 </div>
+            </div>
                 <div class="swiper-slide card shadow-sm m-2">
                     <div class="card-body text-center">
                         <h6 class="card-title font-weight-bold">HTML, CSS, JavaScript</h6>
@@ -196,6 +122,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <h6 class="card-title font-weight-bold">Photoshop</h6>
             </div>
         </div>
+        <div class="swiper-slide card shadow-sm m-2">
+          <div class="card-body text-center">
+              <h6 class="card-title font-weight-bold">Microsoft Office</h6>
+          </div>
+      </div>
             </div> <br>
         <div class="swiper-pagination"></div>
     </div>
@@ -206,6 +137,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="swiper mySwiper2 container">
     <h2>My Projects</h2>
     <div class="swiper-wrapper mt-3">
+      <div class="swiper-slide" style="margin: 10px;"> 
+        <div class="card">
+          <img src="image/Tastebuds.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">TasteBuds Admin</h5>
+            <p class="card-text">Admin Page for Final year project.</p>
+            <a href="https://www.taste-buds.me/" target="_blank" class="btn btn-primary">Check</a>
+          </div>
+        </div>
+      </div>
       <div class="swiper-slide" style="margin: 10px;"> 
         <div class="card">
           <img src="image/P-1.jpg" class="card-img-top" alt="Project 1">
