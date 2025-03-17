@@ -77,22 +77,22 @@ body{
     padding: 2em;
     border-radius: 20px;
 }
-
 .bottle {
     width: 90%;
     max-width: 600px; /* Adjust as needed */
     margin: 2% auto;
     border-radius: 20px;
     overflow: hidden; /* Ensures the image stays within the container */
+    display: flex;
+    justify-content: center;
 }
 
 .bottle img {
     width: 100%;
     height: auto; /* Maintains aspect ratio */
     display: block; /* Removes unwanted spaces below images */
-    object-fit: cover; /* Ensures the image covers the container properly */
+    object-fit: contain; /* Ensures the full image is visible without distortion */
 }
-
 
 .scale{
     text-align: center;
