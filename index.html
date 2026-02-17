@@ -1,409 +1,643 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Tag Manager for Google Analytics -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5TR2DZHH');</script>
-<!-- End Google Tag Manager -->
-  <!-- for title -->
-  <link rel="icon" type="image/png" sizes="32x32" href="image/Title.png">
-  <title>Aslin Karmacharya</title>
-  <!-- BootStrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Font-->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <!--For icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <!-- Link Swiper's CSS -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
- <link rel="stylesheet" href="Styles.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Aslin Karmacharya</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact me</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Showcase -->
-<div class="jumbotron text-center" style="background-image: url(image/background.png);background-position: center;">
-    <h1 class="display-4">Welcome to My Portfolio</h1>
-    <p class="lead mt-4">I'm a web developer passionate about creating amazing websites.</p>
-    <br>
-    <p class="lead">Feel free to explore my work and get in touch with me for any inquiries</p>
-  </div>
-  
-
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-            <img src="image/Aslin.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Tag Manager for Google Analytics -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5TR2DZHH");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- for title -->
+    <link rel="icon" type="image/png" sizes="32x32" href="image/Title.png" />
+    <title>Aslin Karmacharya</title>
+    <!-- BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--For icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Aslin Karmacharya</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact me</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-6 mt-3">
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <div
+      class="jumbotron text-center"
+      style="
+        background-image: url(image/background.png);
+        background-position: center;
+      "
+    >
+      <h1 class="display-4">Welcome to My Portfolio</h1>
+      <p class="lead mt-4">
+        I'm a web developer passionate about creating amazing websites.
+      </p>
+      <br />
+      <p class="lead">
+        Feel free to explore my work and get in touch with me for any inquiries
+      </p>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="image/Aslin.jpg"
+              alt="Profile Picture"
+              class="img-fluid rounded-circle"
+            />
+          </div>
+          <div class="col-lg-6 mt-3">
             <h2>About Me</h2>
-          <p>
-            I am a Front-End Developer and Computer Science student driven by the challenge of architecting scalable, enterprise-level web applications. Over the past year, my professional focus has undergone a significant shift. I started with a foundational interest in React.js and Next.js, but lately I have been prioritizing Angular 20 as my primary framework for building projects. Currently, as an Associate Software Developer, I have been integrating complex APIs, handling intricate financial logic, and ensuring data heavy applications remain performant. <br />
-            My most significant technical achievement to date was leading the extensive migration of a software, taking the platform from Angular 8 to version 20. It taught me a lot about  refactoring legacy architectures, navigating breaking changes, and implementing modern standards to ensure long-term stability. Lastly, I enjoy the challenge of working on projects that require structure and scalability, and I am always looking to further my skills in modern web development.
-          </p>
+            <p>
+              I am a Front-End Developer and Computer Science student driven by
+              the challenge of architecting scalable, enterprise-level web
+              applications. Over the past year, my professional focus has
+              undergone a significant shift. I started with a foundational
+              interest in React.js and Next.js, but lately I have been
+              prioritizing Angular 20 as my primary framework for building
+              projects. Currently, as an Associate Software Developer, I have
+              been integrating complex APIs, handling intricate financial logic,
+              and ensuring data heavy applications remain performant. <br />
+              My most significant technical achievement to date was leading the
+              extensive migration of a software, taking the platform from
+              Angular 8 to version 20. It taught me a lot about refactoring
+              legacy architectures, navigating breaking changes, and
+              implementing modern standards to ensure long-term stability.
+              Lastly, I enjoy the challenge of working on projects that require
+              structure and scalability, and I am always looking to further my
+              skills in modern web development.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5">
-    <div class="swiper mySwiper1 container">
-            <h2 class="text-center">Skills</h2>
-            <div class="swiper-wrapper mt-4">
-              <div class="swiper-slide card shadow-sm m-2">
-                <div class="card-body text-center">
-                    <h6 class="card-title font-weight-bold">Angular</h6>
-                </div>
-              </div>
-              <div class="swiper-slide card shadow-sm m-2">
-                <div class="card-body text-center">
-                    <h6 class="card-title font-weight-bold">React & NextJs</h6>
-                </div>
-              </div>
-              <div class="swiper-slide card shadow-sm m-2">
-                <div class="card-body text-center">
-                    <h6 class="card-title font-weight-bold">Bootstrap & Tailwind</h6>
-                </div>
-              </div>
-                <div class="swiper-slide card shadow-sm m-2">
-                    <div class="card-body text-center">
-                        <h6 class="card-title font-weight-bold">HTML, CSS, JavaScript</h6>
-                    </div>
-                </div>
-                <div class="swiper-slide card shadow-sm m-2">
-                    <div class="card-body text-center">
-                        <h6 class="card-title font-weight-bold">Wordpress</h6>
-                    </div>
-                </div>
-                <div class="swiper-slide card shadow-sm m-2">
-                    <div class="card-body text-center">
-                        <h6 class="card-title font-weight-bold">Java, JavaFX</h6>
-                    </div>
-                </div>
-                <div class="swiper-slide card shadow-sm m-2">
-                  <div class="card-body text-center">
-                      <h6 class="card-title font-weight-bold">UI/UX designer</h6>
-                  </div>
-              </div>
-              <div class="swiper-slide card shadow-sm m-2">
-                <div class="card-body text-center">
-                    <h6 class="card-title font-weight-bold">Video Editing</h6>
-                </div>
-            </div>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <div class="swiper mySwiper1 container">
+        <h2 class="text-center">Skills</h2>
+        <div class="swiper-wrapper mt-4">
           <div class="swiper-slide card shadow-sm m-2">
             <div class="card-body text-center">
-                <h6 class="card-title font-weight-bold">Photoshop</h6>
+              <h6 class="card-title font-weight-bold">Angular</h6>
             </div>
+          </div>
+          <div class="swiper-slide card shadow-sm m-2">
+            <div class="card-body text-center">
+              <h6 class="card-title font-weight-bold">React & NextJs</h6>
+            </div>
+          </div>
+          <div class="swiper-slide card shadow-sm m-2">
+            <div class="card-body text-center">
+              <h6 class="card-title font-weight-bold">Bootstrap & Tailwind</h6>
+            </div>
+          </div>
+          <div class="swiper-slide card shadow-sm m-2">
+            <div class="card-body text-center">
+              <h6 class="card-title font-weight-bold">HTML, CSS, JavaScript</h6>
+            </div>
+          </div>
+          <div class="swiper-slide card shadow-sm m-2">
+            <div class="card-body text-center">
+              <h6 class="card-title font-weight-bold">Wordpress</h6>
+            </div>
+          </div>
+          <div class="swiper-slide card shadow-sm m-2">
+            <div class="card-body text-center">
+              <h6 class="card-title font-weight-bold">Java, JavaFX</h6>
+            </div>
+          </div>
+          <div class="swiper-slide card shadow-sm m-2">
+            <div class="card-body text-center">
+              <h6 class="card-title font-weight-bold">UI/UX designer</h6>
+            </div>
+          </div>
+          <div class="swiper-slide card shadow-sm m-2">
+            <div class="card-body text-center">
+              <h6 class="card-title font-weight-bold">Video Editing</h6>
+            </div>
+          </div>
+          <div class="swiper-slide card shadow-sm m-2">
+            <div class="card-body text-center">
+              <h6 class="card-title font-weight-bold">Photoshop</h6>
+            </div>
+          </div>
         </div>
-            </div> <br>
+        <br />
         <div class="swiper-pagination"></div>
-    </div>
-</section>
+      </div>
+    </section>
 
-  <!-- Projects Section -->
-<section id="projects" class="py-5">
-  <div class="swiper mySwiper2 container">
-    <h2>My Projects</h2>
-    <div class="swiper-wrapper mt-3">
-      <div class="swiper-slide" style="margin: 10px;"> 
-        <div class="card">
-          <img src="image/GridSpace.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">GridSpace</h5>
-            <p class="card-text">Made using Next <a href="https://youtu.be/QWo0z2QxanE">Demo Video</a></p>
-            <a href="https://github.com/asl1n/GridSpace" target="_blank" class="btn btn-primary">Check</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide" style="margin: 10px;"> 
-        <div class="card">
-          <img src="image/fitnesxia.jpg" class="card-img-top" alt="fitnessxia">
-          <div class="card-body">
-            <h5 class="card-title">Fitnesxia</h5>
-            <p class="card-text">SPA using React for Fitness.</p>
-            <a href="https://asl1n.github.io/Fitnesxia/" target="_blank" class="btn btn-primary">Check</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide" style="margin: 10px;"> 
-        <div class="card">
-          <img src="image/Tastebuds.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">TasteBuds Admin</h5>
-            <p class="card-text">Admin Page for Final year project.</p>
-            <a href="https://github.com/asl1n/FYP-tastebds" target="_blank" class="btn btn-primary">Check</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide" style="margin: 10px;"> 
-        <div class="card">
-          <img src="image/Fixingyou.jpg" class="card-img-top" alt="Project">
-          <div class="card-body">
-            <h5 class="card-title">FIXINGYOU</h5>
-            <p class="card-text">Made using php: <a href="https://youtu.be/c5USo3zIDhg">Demo Video</a></p>
-            <a href="https://github.com/asl1n/FIXINGYOU" target="_blank" class="btn btn-primary">Check</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide" style="margin: 10px;"> 
-        <div class="card">
-          <img src="image/P-2.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Wordpres Site</h5>
-            <p class="card-text">A Wordpress site that I made for fun.</p>
-            <a href="BodyFuel.mp4" target="_blank" class="btn btn-primary">Check</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide" style="margin: 10px;"> 
-        <div class="card">
-          <img src="image/p-6.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Mobile app</h5>
-            <p class="card-text">A figma prototype for health app.</p>
-            <a href="https://www.figma.com/proto/qW7wT6xBrlhBLIqNv7MWYO/Personal?node-id=6-7786&t=VEaIo3Wsqzhejilf-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A7786" target="_blank" class="btn btn-primary">Check</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide" style="margin: 10px;"> 
-        <div class="card">
-          <img src="image/p-7.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Figma Design</h5>
-            <p class="card-text">A figma design of our assignment website.</p>
-            <a href="https://www.figma.com/file/entoSePf6Km8SmFuSkYURI/Untitled?type=design&node-id=0%3A1&mode=design&t=QjYlAChO3Jdrr4Ay-1" target="_blank" class="btn btn-primary">Check</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide" style="margin: 10px;"> 
-        <div class="card">
-          <img src="image/p-5.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Fxml project</h5>
-            <p class="card-text">Designed test page and user information page.</p>
-            <a href="https://github.com/YujenM/Advance_Group_Assignment" target="_blank" class="btn btn-primary">Check</a>
-          </div>
-        </div>
-      </div>
-    </div> <br>
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <h2>Contact Me</h2>
-                <form onsubmit="validateAndSend(); reset();return false;">
-                  <div class="form-group">
-                      <label for="name">Name</label>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                  </div>
-                  <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
-                  </div>
-                  <div class="form-group">
-                      <label for="number">Phone no.</label>
-                      <input type="text" class="form-control" id="number" name="number" placeholder="Enter your number">
-                  </div>
-                  <div class="form-group">
-                      <label for="message">Message</label>
-                      <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
-                  </div>
-                  <p>Note: this feature isn't available at the moment.</p>
-                  <button type="submit" class="btn btn-primary" >Submit</button>
-                  
-              </form>
-  <!-- Bootstrap modal for "Please fill in all fields" -->
-              <div class="modal fade" id="fillInModal" tabindex="-1" role="dialog" aria-labelledby="fillInModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="fillInModalLabel">Error!</h5>
-                            <button type="button" class="close" data-dismiss="modal" >
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            Please fill in all fields.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-  <!-- Bootstrap modal for success-->
-            <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="successModalLabel">Success!</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
-                      </div>
-                      <div class="modal-body">
-                          Your message has been sent successfully.
-                      </div>
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                      </div>
-                  </div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="swiper mySwiper2 container">
+        <h2>My Projects</h2>
+        <div class="swiper-wrapper mt-3">
+          <div class="swiper-slide" style="margin: 10px">
+            <div class="card">
+              <img
+                src="image/GridSpace.jpg"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">GridSpace</h5>
+                <p class="card-text">
+                  Made using Next
+                  <a href="https://youtu.be/QWo0z2QxanE">Demo Video</a>
+                </p>
+                <a
+                  href="https://github.com/asl1n/GridSpace"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Check</a
+                >
               </div>
-          </div>
-
             </div>
-            <div class="col-lg-6 mt-5">
-              <i class="fa-sharp fa-solid fa-envelope fa-lg"></i><h4 style="display: inline-block; margin-left: 5px; margin-bottom: 0; margin-top: 0;">Email</h4>
-              <p style="margin-left: 30px; margin-top: 0; margin-bottom: 40px;"><a href="mailto:Aslinkarmacharya@gmail.com" class="contact-info">aslinkarmacharya@gmail.com</a></p>
-              
-              <i class="fa-solid fa-phone fa-lg"></i><h4 style="display: inline; margin-left: 5px; margin-bottom: 0; margin-top: 0;">Phone no.</h4>
-              <p style="margin-left: 30px; margin-top: 0; margin-bottom: 40px;"><a href="tel:9821200463" class="contact-info">9821200463</a></p>
-              
-              <i class="fa-brands fa-linkedin fa-lg" style="color: #000000;"></i><h4 style="display: inline-block; margin-left: 5px; margin-bottom: 0;">Linked in</h4>
-              <p style="margin-left: 30px; margin-top: 0; margin-bottom: 40px;"><a href="https://www.linkedin.com/in/AslinKarmacharya" class="contact-info" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/AslinKarmacharya</a>
-              </p>
           </div>
-    </div>
-    </div>
-  </section>
+          <div class="swiper-slide" style="margin: 10px">
+            <div class="card">
+              <img
+                src="image/fitnesxia.jpg"
+                class="card-img-top"
+                alt="fitnessxia"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fitnesxia</h5>
+                <p class="card-text">SPA using React for Fitness.</p>
+                <a
+                  href="https://asl1n.github.io/Fitnesxia/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Check</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="margin: 10px">
+            <div class="card">
+              <img
+                src="image/Tastebuds.jpg"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">TasteBuds Admin</h5>
+                <p class="card-text">Admin Page for Final year project.</p>
+                <a
+                  href="https://github.com/asl1n/FYP-tastebds"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Check</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="margin: 10px">
+            <div class="card">
+              <img
+                src="image/Fixingyou.jpg"
+                class="card-img-top"
+                alt="Project"
+              />
+              <div class="card-body">
+                <h5 class="card-title">FIXINGYOU</h5>
+                <p class="card-text">
+                  Made using php:
+                  <a href="https://youtu.be/c5USo3zIDhg">Demo Video</a>
+                </p>
+                <a
+                  href="https://github.com/asl1n/FIXINGYOU"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Check</a
+                >
+              </div>
+            </div>
+          </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4 text-center">
-    <div class="container">
-      <p>&copy;2026 [Copyright Aslin Karmacharya]. All Rights Reserved.</p>
-    </div>
-  </footer>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper1", {
-  slidesPerView: 'auto', 
-  centeredSlides: false,
-  slidesPerGroupSkip: 2,
-  grabCursor: true,
-  keyboard: {
-    enabled: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    // When window width is >= 768px (sm and above)
-    768: {
-      slidesPerView: 2,
-    },
-    // When window width is >= 992px (md and above)
-    992: {
-      slidesPerView: 3,
-    },
-  },
-});
+          <div class="swiper-slide" style="margin: 10px">
+            <div class="card">
+              <img src="image/P-2.jpg" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <h5 class="card-title">Wordpres Site</h5>
+                <p class="card-text">A Wordpress site that I made for fun.</p>
+                <a href="BodyFuel.mp4" target="_blank" class="btn btn-primary"
+                  >Check</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="margin: 10px">
+            <div class="card">
+              <img src="image/p-6.jpg" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <h5 class="card-title">Mobile app</h5>
+                <p class="card-text">A figma prototype for health app.</p>
+                <a
+                  href="https://www.figma.com/proto/qW7wT6xBrlhBLIqNv7MWYO/Personal?node-id=6-7786&t=VEaIo3Wsqzhejilf-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A7786"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Check</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="margin: 10px">
+            <div class="card">
+              <img src="image/p-7.jpg" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <h5 class="card-title">Figma Design</h5>
+                <p class="card-text">
+                  A figma design of our assignment website.
+                </p>
+                <a
+                  href="https://www.figma.com/file/entoSePf6Km8SmFuSkYURI/Untitled?type=design&node-id=0%3A1&mode=design&t=QjYlAChO3Jdrr4Ay-1"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Check</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="margin: 10px">
+            <div class="card">
+              <img src="image/p-5.jpg" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <h5 class="card-title">Fxml project</h5>
+                <p class="card-text">
+                  Designed test page and user information page.
+                </p>
+                <a
+                  href="https://github.com/YujenM/Advance_Group_Assignment"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Check</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
-var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 'auto',
-  centeredSlides: false,
-  slidesPerGroupSkip: 1,
-  grabCursor: true,
-  keyboard: {
-    enabled: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    // When window width is >= 992px 
-    992: {
-      slidesPerView: 2, 
-    },
-  },
-});
-  </script>
-  <!--For email using JS-->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Contact Me</h2>
+            <form
+              onsubmit="
+                validateAndSend();
+                reset();
+                return false;
+              "
+            >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone no.</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                  placeholder="Enter your number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+              <p>Note: this feature isn't available at the moment.</p>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <!-- Bootstrap modal for "Please fill in all fields" -->
+            <div
+              class="modal fade"
+              id="fillInModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="fillInModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="fillInModalLabel">Error!</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">Please fill in all fields.</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bootstrap modal for success-->
+            <div
+              class="modal fade"
+              id="successModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="successModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Success!</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Your message has been sent successfully.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5">
+            <i class="fa-sharp fa-solid fa-envelope fa-lg"></i>
+            <h4
+              style="
+                display: inline-block;
+                margin-left: 5px;
+                margin-bottom: 0;
+                margin-top: 0;
+              "
+            >
+              Email
+            </h4>
+            <p style="margin-left: 30px; margin-top: 0; margin-bottom: 40px">
+              <a href="mailto:Aslinkarmacharya@gmail.com" class="contact-info"
+                >aslinkarmacharya@gmail.com</a
+              >
+            </p>
+
+            <i class="fa-solid fa-phone fa-lg"></i>
+            <h4
+              style="
+                display: inline;
+                margin-left: 5px;
+                margin-bottom: 0;
+                margin-top: 0;
+              "
+            >
+              Phone no.
+            </h4>
+            <p style="margin-left: 30px; margin-top: 0; margin-bottom: 40px">
+              <a href="tel:9821200463" class="contact-info">9821200463</a>
+            </p>
+
+            <i class="fa-brands fa-linkedin fa-lg" style="color: #000000"></i>
+            <h4
+              style="display: inline-block; margin-left: 5px; margin-bottom: 0"
+            >
+              Linked in
+            </h4>
+            <p style="margin-left: 30px; margin-top: 0; margin-bottom: 40px">
+              <a
+                href="https://www.linkedin.com/in/AslinKarmacharya"
+                class="contact-info"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin.com/in/AslinKarmacharya</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+      <div class="container">
+        <p>&copy;2026 [Copyright Aslin Karmacharya]. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: "auto",
+        centeredSlides: false,
+        slidesPerGroupSkip: 2,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          // When window width is >= 768px (sm and above)
+          768: {
+            slidesPerView: 2,
+          },
+          // When window width is >= 992px (md and above)
+          992: {
+            slidesPerView: 3,
+          },
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: "auto",
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          // When window width is >= 992px
+          992: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
+    <!--For email using JS-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
       function validateAndSend() {
-          var name = document.getElementById("name").value;
-          var email = document.getElementById("email").value;
-          var number = document.getElementById("number").value;
-          var message = document.getElementById("message").value;
-  
-          // Validate fields
-          if (name.trim() === "" || email.trim() === "" || number.trim() === "" || message.trim() === "") {
-              $('#fillInModal').modal('show');
-              return;
-          }
-  
-          // If all fields are filled, call sendEmail
-          sendEmail();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var number = document.getElementById("number").value;
+        var message = document.getElementById("message").value;
+
+        // Validate fields
+        if (
+          name.trim() === "" ||
+          email.trim() === "" ||
+          number.trim() === "" ||
+          message.trim() === ""
+        ) {
+          $("#fillInModal").modal("show");
+          return;
+        }
+
+        // If all fields are filled, call sendEmail
+        sendEmail();
       }
-  
+
       function sendEmail() {
-          Email.send({
-              SecureToken: "af4e13d7-64ea-4a63-bf43-f38ec5d164b7 ", 
-              To: "aslinkarmacharya@gmail.com",
-              From: document.getElementById("email").value,
-              Subject: "Contact Form Submission",
-              Body: "Name: " + document.getElementById("name").value + "<br>" +
-                  "Email: " + document.getElementById("email").value + "<br>" +
-                  "Phone: " + document.getElementById("number").value + "<br>" +
-                  "Message: " + document.getElementById("message").value
-          }).then(function (message) {
-              $('#successModal').modal('show');
-          });
+        Email.send({
+          SecureToken: "af4e13d7-64ea-4a63-bf43-f38ec5d164b7 ",
+          To: "aslinkarmacharya@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "Contact Form Submission",
+          Body:
+            "Name: " +
+            document.getElementById("name").value +
+            "<br>" +
+            "Email: " +
+            document.getElementById("email").value +
+            "<br>" +
+            "Phone: " +
+            document.getElementById("number").value +
+            "<br>" +
+            "Message: " +
+            document.getElementById("message").value,
+        }).then(function (message) {
+          $("#successModal").modal("show");
+        });
       }
-  </script>
-  <!-- Google Tag Manager for Google Analytics(noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TR2DZHH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-</body>
+    </script>
+    <!-- Google Tag Manager for Google Analytics(noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5TR2DZHH"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
 </html>
-
-
-
