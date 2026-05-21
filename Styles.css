@@ -220,9 +220,28 @@ ul {
   justify-content: center;
   overflow: hidden;
   padding: calc(var(--nav-h) + 40px) 24px 80px;
+  background-image: url("image/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Subtle noise overlay */
+/* Dark overlay: heavily darkened so text is crisp over the image */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(8, 8, 8, 0.97) 0%,
+    rgba(8, 8, 8, 0.91) 50%,
+    rgba(8, 8, 8, 0.94) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Noise texture on top of overlay */
 .hero-noise {
   position: absolute;
   inset: 0;
@@ -230,26 +249,29 @@ ul {
   background-size: 200px;
   pointer-events: none;
   opacity: 0.5;
+  z-index: 1;
 }
 
-/* Accent gradient blob */
+/* Lime accent vignette bottom-right */
 .hero::before {
   content: "";
   position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 60vw;
-  height: 60vw;
+  bottom: -10%;
+  right: -5%;
+  width: 50vw;
+  height: 50vw;
   background: radial-gradient(
     circle,
-    rgba(200, 240, 0, 0.07) 0%,
-    transparent 70%
+    rgba(200, 240, 0, 0.06) 0%,
+    transparent 65%
   );
   pointer-events: none;
+  z-index: 1;
 }
 
 .hero-container {
   position: relative;
+  z-index: 2; /* above ::before, ::after, and .hero-noise */
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -380,6 +402,7 @@ ul {
   color: var(--text-muted);
   font-size: 0.9rem;
   animation: bounce 2.4s ease infinite;
+  z-index: 2;
 }
 
 @keyframes bounce {
@@ -523,13 +546,22 @@ ul {
   color: var(--accent);
 }
 
-/* ─── SKILLS ──────────────────────────────────────────────────── */
+/* Horizontal clip wrapper — stops Swiper slides bleeding out sideways
+   while allowing the vertical hover-lift to remain visible */
+.skills-swiper-clip {
+  overflow-x: clip;
+  overflow-y: visible;
+  padding: 0;
+}
+
 .skills-section {
-  overflow: hidden;
+  /* No overflow:hidden — it clips the card hover-lift and top borders */
+  overflow: visible;
 }
 
 .skills-section .section-container {
   margin-bottom: 40px;
+  padding-left: 24px;
 }
 
 .skill-card {
@@ -538,40 +570,49 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 14px;
-  padding: 32px 20px;
+  padding: 28px 16px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   text-align: center;
-  min-height: 130px;
+  /* Fixed height so every card is the same size on every screen */
+  height: 140px;
   transition:
     border-color var(--transition),
     transform var(--transition),
-    background var(--transition);
+    background var(--transition),
+    box-shadow var(--transition);
 }
 
 .skill-card:hover {
   border-color: var(--accent);
   background: var(--bg-card-2);
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(200, 240, 0, 0.08);
 }
 
 .skill-card i {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: var(--accent);
+  line-height: 1;
 }
 
 .skill-card span {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
   color: var(--text-muted);
   text-transform: uppercase;
+  line-height: 1.3;
 }
 
-/* Swiper padding for the skills section */
 .skillsSwiper {
-  padding: 0 24px 40px !important;
+  padding: 12px 24px 44px !important;
+  overflow: visible !important;
+}
+
+.skillsSwiper .swiper-wrapper {
+  overflow: visible;
 }
 
 .skills-pagination .swiper-pagination-bullet {
