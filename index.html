@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google Tag Manager for Google Analytics -->
+
+    <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -17,17 +18,16 @@
       })(window, document, "script", "dataLayer", "GTM-5TR2DZHH");
     </script>
     <!-- End Google Tag Manager -->
-    <!-- for title -->
+
     <link rel="icon" type="image/png" sizes="32x32" href="image/Title.png" />
     <title>Aslin Karmacharya | Portfolio</title>
 
-    <!-- Meta Data -->
+    <!-- Meta -->
     <meta name="title" content="Aslin Karmacharya | Portfolio" />
     <meta
       name="description"
       content="Associate Software Developer specializing in Angular and modern web technologies."
     />
-
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://asl1n.github.io/Portfolio/" />
     <meta property="og:title" content="Aslin Karmacharya | Portfolio" />
@@ -39,7 +39,6 @@
       property="og:image"
       content="https://asl1n.github.io/Portfolio/image/Aslin.jpg"
     />
-
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://asl1n.github.io/Portfolio/" />
     <meta property="twitter:title" content="Aslin Karmacharya | Portfolio" />
@@ -51,22 +50,16 @@
       property="twitter:image"
       content="https://asl1n.github.io/Portfolio/image/Aslin.jpg"
     />
-    <!-- Meta Data END -->
 
-    <!-- BootStrap -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Font-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <!--For icons -->
+
+    <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -74,688 +67,660 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Link Swiper's CSS -->
+
+    <!-- Swiper -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="Styles.css" />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Aslin Karmacharya</a>
+    <!-- ─── NAVBAR ─────────────────────────────────────────────────── -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a class="nav-brand" href="#">AK</a>
+
+        <!-- Hamburger -->
         <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
+          class="nav-toggle"
+          id="navToggle"
           aria-label="Toggle navigation"
+          aria-expanded="false"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact me</a>
-            </li>
+
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
+          <a
+            class="btn-cv"
+            href="https://asl1n.github.io/Resume/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>View CV</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
         </div>
       </div>
     </nav>
 
-    <!-- Showcase -->
-    <div
-      class="jumbotron text-center"
-      style="
-        background-image: url(image/background.png);
-        background-position: center;
-      "
-    >
-      <h1 class="display-4">Welcome to My Portfolio</h1>
-      <p class="lead mt-4">
-        I'm a web developer passionate about creating amazing websites.
-      </p>
-      <br />
-      <p class="lead">
-        Feel free to explore my work and get in touch with me for any inquiries
-      </p>
-    </div>
+    <!-- ─── HERO ───────────────────────────────────────────────────── -->
+    <section class="hero" id="home">
+      <div class="hero-noise"></div>
+      <div class="hero-container">
+        <div class="hero-label">
+          <span class="dot"></span>
+          Associate Software Developer · Kathmandu, NP
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-line" style="--i: 0">Aslin</span>
+          <span class="hero-line accent" style="--i: 1">Karma&shy;charya</span>
+        </h1>
+        <p class="hero-sub" style="--i: 2">
+          Front-end engineer. Angular specialist.<br />Builder of scalable,
+          data-heavy web apps.
+        </p>
+        <div class="hero-actions" style="--i: 3">
+          <a href="#projects" class="btn-primary-hero">See My Work</a>
+          <a href="#contact" class="btn-ghost-hero">Get in Touch</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <img
-              src="image/Aslin.jpg"
-              alt="Aslin Karmacharya"
-              class="img-fluid rounded-circle"
-            />
+    <!-- ─── ABOUT ──────────────────────────────────────────────────── -->
+    <section id="about" class="section about-section">
+      <div class="section-container about-grid">
+        <div class="about-image-wrap">
+          <div class="about-img-frame">
+            <img src="image/Aslin.jpg" alt="Aslin Karmacharya" />
           </div>
-          <div class="col-lg-6 mt-3">
-            <h2>About Me</h2>
-            <p>
-              I am a Front-End Developer and Computer Science student driven by
-              the challenge of architecting scalable, enterprise-level web
-              applications. Over the past year, my professional focus has
-              undergone a significant shift. I started with a foundational
-              interest in React.js and Next.js, but lately I have been
-              prioritizing Angular 20 as my primary framework for building
-              projects. Currently, as an Associate Software Developer, I have
-              been integrating complex APIs, handling intricate financial logic,
-              and ensuring data heavy applications remain performant.
-              <br />
-              My most significant technical achievement to date was leading the
-              extensive migration of a software, taking the platform from
-              Angular 8 to version 20. It taught me a lot about refactoring
-              legacy architectures, navigating breaking changes, and
-              implementing modern standards to ensure long-term stability.
-              Lastly, I enjoy the challenge of working on projects that require
-              structure and scalability, and I am always looking to further my
-              skills in modern web development.
-            </p>
+          <div class="about-img-accent"></div>
+        </div>
+        <div class="about-content">
+          <p class="section-label">// WHO I AM</p>
+          <h2 class="section-title">About Me</h2>
+          <p class="about-text">
+            I'm a Front-End Developer and Computer Science student driven by
+            architecting scalable, enterprise-level web applications. My
+            professional focus has evolved significantly — starting with
+            React.js and Next.js, I now prioritize
+            <strong>Angular 20</strong> as my primary framework.
+          </p>
+          <p class="about-text">
+            As an Associate Software Developer, I've been integrating complex
+            APIs, handling intricate financial logic, and keeping data-heavy
+            applications performant. My biggest technical achievement was
+            leading the migration of a full platform from
+            <strong>Angular 8 to version 20</strong> — refactoring legacy
+            architectures, navigating breaking changes, and modernising the
+            entire stack.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Angular 20</span>
+            <span class="tag">React / Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">API Integration</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
-      <div class="swiper mySwiper1 container">
-        <h2 class="text-center">Skills</h2>
-        <div class="swiper-wrapper mt-4">
-          <div class="swiper-slide card shadow-sm m-2">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">Angular</h6>
-            </div>
+    <!-- ─── SKILLS ─────────────────────────────────────────────────── -->
+    <section id="skills" class="section skills-section">
+      <div class="section-container">
+        <p class="section-label">// WHAT I KNOW</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="swiper skillsSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide skill-card">
+            <i class="fa-brands fa-angular"></i><span>Angular</span>
           </div>
-          <div class="swiper-slide card shadow-sm m-2">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">React & NextJs</h6>
-            </div>
+          <div class="swiper-slide skill-card">
+            <i class="fa-brands fa-react"></i><span>React &amp; Next.js</span>
           </div>
-          <div class="swiper-slide card shadow-sm m-2">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">Bootstrap & Tailwind</h6>
-            </div>
+          <div class="swiper-slide skill-card">
+            <i class="fa-brands fa-bootstrap"></i
+            ><span>Bootstrap &amp; Tailwind</span>
           </div>
-          <div class="swiper-slide card shadow-sm m-2">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">HTML, CSS, JavaScript</h6>
-            </div>
+          <div class="swiper-slide skill-card">
+            <i class="fa-brands fa-js"></i><span>HTML, CSS, JS</span>
           </div>
-          <div class="swiper-slide card shadow-sm m-2">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">Wordpress</h6>
-            </div>
+          <div class="swiper-slide skill-card">
+            <i class="fa-brands fa-wordpress"></i><span>WordPress</span>
           </div>
-          <div class="swiper-slide card shadow-sm m-2">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">Java, JavaFX</h6>
-            </div>
+          <div class="swiper-slide skill-card">
+            <i class="fa-brands fa-java"></i><span>Java &amp; JavaFX</span>
           </div>
-          <div class="swiper-slide card shadow-sm m-2">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">UI/UX designer</h6>
-            </div>
+          <div class="swiper-slide skill-card">
+            <i class="fa-solid fa-pen-nib"></i><span>UI/UX Design</span>
           </div>
-          <div class="swiper-slide card shadow-sm m-2">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">Video Editing</h6>
-            </div>
+          <div class="swiper-slide skill-card">
+            <i class="fa-solid fa-film"></i><span>Video Editing</span>
           </div>
-          <div class="swiper-slide card shadow-sm m-2">
-            <div class="card-body text-center">
-              <h6 class="card-title font-weight-bold">Photoshop</h6>
-            </div>
+          <div class="swiper-slide skill-card">
+            <i class="fa-solid fa-wand-magic-sparkles"></i
+            ><span>Photoshop</span>
           </div>
         </div>
-        <br />
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination skills-pagination"></div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-      <div class="swiper mySwiper2 container">
-        <h2>My Projects</h2>
-        <div class="swiper-wrapper mt-3">
-          <div class="swiper-slide" style="margin: 10px">
-            <div class="card">
-              <img
-                src="image/GridSpace.jpg"
-                class="card-img-top"
-                alt="Grid Space"
-              />
-              <div class="card-body">
-                <h5 class="card-title">GridSpace</h5>
-                <p class="card-text">
-                  Made using Next
-                  <a href="https://youtu.be/QWo0z2QxanE">Demo Video</a>
-                </p>
+    <!-- ─── PROJECTS ───────────────────────────────────────────────── -->
+    <section id="projects" class="section projects-section">
+      <div class="section-container">
+        <p class="section-label">// WHAT I'VE BUILT</p>
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="image/GridSpace.jpg" alt="GridSpace" />
+              <div class="project-overlay">
                 <a
                   href="https://github.com/asl1n/GridSpace"
                   target="_blank"
-                  class="btn btn-primary"
-                  >Check</a
+                  rel="noopener noreferrer"
+                  class="project-link-btn"
                 >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://youtu.be/QWo0z2QxanE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link-btn ghost"
+                >
+                  <i class="fa-brands fa-youtube"></i> Demo
+                </a>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide" style="margin: 10px">
-            <div class="card">
-              <img
-                src="image/fitnesxia.jpg"
-                class="card-img-top"
-                alt="Fitnessxia"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Fitnesxia</h5>
-                <p class="card-text">SPA using React for Fitness.</p>
+            <div class="project-meta">
+              <span class="project-tech">Next.js</span>
+              <h3 class="project-title">GridSpace</h3>
+              <p class="project-desc">A project built with Next.js.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="image/fitnesxia.jpg" alt="Fitnesxia" />
+              <div class="project-overlay">
                 <a
                   href="https://asl1n.github.io/Fitnesxia/"
                   target="_blank"
-                  class="btn btn-primary"
-                  >Check</a
+                  rel="noopener noreferrer"
+                  class="project-link-btn"
                 >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                </a>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide" style="margin: 10px">
-            <div class="card">
-              <img
-                src="image/GitLab-Profile.png"
-                class="card-img-top"
-                alt="Accounting Software"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Office Project</h5>
-                <p class="card-text">
-                  Accounting & Inverntory Software built using Angular.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-toggle="modal"
-                  data-target="#gitCommitModal"
-                >
-                  Check
+            <div class="project-meta">
+              <span class="project-tech">React</span>
+              <h3 class="project-title">Fitnesxia</h3>
+              <p class="project-desc">
+                Single-page fitness application built with React.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="image/GitLab-Profile.png" alt="Office Project" />
+              <div class="project-overlay">
+                <button class="project-link-btn" data-modal="gitCommitModal">
+                  <i class="fa-solid fa-chart-column"></i> Activity
                 </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide" style="margin: 10px">
-            <div class="card">
-              <img
-                src="image/aslin-exe.png"
-                class="card-img-top"
-                alt="Middle-Ware"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Aslin Collection</h5>
-                <p class="card-text">
-                  Fun Project I made while Learning React.
-                </p>
+            <div class="project-meta">
+              <span class="project-tech">Angular</span>
+              <h3 class="project-title">Office Project</h3>
+              <p class="project-desc">
+                Accounting &amp; Inventory software built using Angular.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="image/aslin-exe.png" alt="Aslin Collection" />
+              <div class="project-overlay">
                 <a
                   href="https://asl1n.github.io/aslin-exe/"
                   target="_blank"
-                  class="btn btn-primary"
-                  >Check</a
+                  rel="noopener noreferrer"
+                  class="project-link-btn"
                 >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                </a>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide" style="margin: 10px">
-            <div class="card">
-              <img
-                src="image/Tastebuds.jpg"
-                class="card-img-top"
-                alt="Taste buds"
-              />
-              <div class="card-body">
-                <h5 class="card-title">TasteBuds Admin</h5>
-                <p class="card-text">Admin Page for Final year project.</p>
+            <div class="project-meta">
+              <span class="project-tech">React</span>
+              <h3 class="project-title">Aslin Collection</h3>
+              <p class="project-desc">
+                A fun personal project made while learning React.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="image/Tastebuds.jpg" alt="TasteBuds Admin" />
+              <div class="project-overlay">
                 <a
                   href="https://github.com/asl1n/FYP-tastebds"
                   target="_blank"
-                  class="btn btn-primary"
-                  >Check</a
+                  rel="noopener noreferrer"
+                  class="project-link-btn"
                 >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide" style="margin: 10px">
-            <div class="card">
-              <img
-                src="image/Fixingyou.jpg"
-                class="card-img-top"
-                alt="Fitness"
-              />
-              <div class="card-body">
-                <h5 class="card-title">FIXINGYOU</h5>
-                <p class="card-text">
-                  Made using php:
-                  <a href="https://youtu.be/c5USo3zIDhg">Demo Video</a>
-                </p>
+            <div class="project-meta">
+              <span class="project-tech">FYP</span>
+              <h3 class="project-title">TasteBuds Admin</h3>
+              <p class="project-desc">
+                Admin dashboard built for the final-year project.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="image/Fixingyou.jpg" alt="FIXINGYOU" />
+              <div class="project-overlay">
                 <a
                   href="https://github.com/asl1n/FIXINGYOU"
                   target="_blank"
-                  class="btn btn-primary"
-                  >Check</a
+                  rel="noopener noreferrer"
+                  class="project-link-btn"
                 >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://youtu.be/c5USo3zIDhg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link-btn ghost"
+                >
+                  <i class="fa-brands fa-youtube"></i> Demo
+                </a>
               </div>
             </div>
-          </div>
+            <div class="project-meta">
+              <span class="project-tech">PHP</span>
+              <h3 class="project-title">FIXINGYOU</h3>
+              <p class="project-desc">PHP-based fitness web application.</p>
+            </div>
+          </article>
 
-          <div class="swiper-slide" style="margin: 10px">
-            <div class="card">
-              <img src="image/P-2.jpg" class="card-img-top" alt="Fitness" />
-              <div class="card-body">
-                <h5 class="card-title">Wordpres Site</h5>
-                <p class="card-text">A Wordpress site that I made for fun.</p>
-                <a href="BodyFuel.mp4" target="_blank" class="btn btn-primary"
-                  >Check</a
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="image/P-2.jpg" alt="WordPress Site" />
+              <div class="project-overlay">
+                <a
+                  href="BodyFuel.mp4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link-btn"
                 >
+                  <i class="fa-solid fa-play"></i> Video
+                </a>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide" style="margin: 10px">
-            <div class="card">
-              <img src="image/p-6.jpg" class="card-img-top" alt="Figma" />
-              <div class="card-body">
-                <h5 class="card-title">Mobile app</h5>
-                <p class="card-text">A figma prototype for health app.</p>
+            <div class="project-meta">
+              <span class="project-tech">WordPress</span>
+              <h3 class="project-title">WordPress Site</h3>
+              <p class="project-desc">
+                A WordPress site built for personal exploration.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="image/p-6.jpg" alt="Mobile App Figma" />
+              <div class="project-overlay">
                 <a
                   href="https://www.figma.com/proto/qW7wT6xBrlhBLIqNv7MWYO/Personal?node-id=6-7786&t=VEaIo3Wsqzhejilf-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A7786"
                   target="_blank"
-                  class="btn btn-primary"
-                  >Check</a
+                  rel="noopener noreferrer"
+                  class="project-link-btn"
                 >
+                  <i class="fa-brands fa-figma"></i> Prototype
+                </a>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide" style="margin: 10px">
-            <div class="card">
-              <img src="image/p-7.jpg" class="card-img-top" alt="Figma" />
-              <div class="card-body">
-                <h5 class="card-title">Figma Design</h5>
-                <p class="card-text">
-                  A figma design of our assignment website.
-                </p>
+            <div class="project-meta">
+              <span class="project-tech">Figma</span>
+              <h3 class="project-title">Mobile App</h3>
+              <p class="project-desc">
+                Figma prototype for a health mobile application.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="image/p-7.jpg" alt="Figma Design" />
+              <div class="project-overlay">
                 <a
                   href="https://www.figma.com/file/entoSePf6Km8SmFuSkYURI/Untitled?type=design&node-id=0%3A1&mode=design&t=QjYlAChO3Jdrr4Ay-1"
                   target="_blank"
-                  class="btn btn-primary"
-                  >Check</a
+                  rel="noopener noreferrer"
+                  class="project-link-btn"
                 >
+                  <i class="fa-brands fa-figma"></i> Design
+                </a>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide" style="margin: 10px">
-            <div class="card">
-              <img src="image/p-5.jpg" class="card-img-top" alt="Design" />
-              <div class="card-body">
-                <h5 class="card-title">Fxml project</h5>
-                <p class="card-text">
-                  Designed test page and user information page.
-                </p>
+            <div class="project-meta">
+              <span class="project-tech">Figma</span>
+              <h3 class="project-title">Figma Design</h3>
+              <p class="project-desc">
+                Design mockup for an assignment website.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-wrap">
+              <img src="image/p-5.jpg" alt="FXML Project" />
+              <div class="project-overlay">
                 <a
                   href="https://github.com/YujenM/Advance_Group_Assignment"
                   target="_blank"
-                  class="btn btn-primary"
-                  >Check</a
+                  rel="noopener noreferrer"
+                  class="project-link-btn"
                 >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
               </div>
             </div>
-          </div>
+            <div class="project-meta">
+              <span class="project-tech">JavaFX</span>
+              <h3 class="project-title">FXML Project</h3>
+              <p class="project-desc">
+                Designed test page and user information page in JavaFX.
+              </p>
+            </div>
+          </article>
         </div>
-        <br />
-        <div class="swiper-pagination"></div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>Contact Me</h2>
-            <form
-              onsubmit="
-                validateAndSend();
-                reset();
-                return false;
-              "
-            >
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div class="form-group">
-                <label for="number">Phone no.</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="number"
-                  name="number"
-                  placeholder="Enter your number"
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="Enter your message"
-                ></textarea>
-              </div>
-              <p>Note: this feature isn't available at the moment.</p>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <!-- Bootstrap modal for "Please fill in all fields" -->
-            <div
-              class="modal fade"
-              id="fillInModal"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="fillInModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="fillInModalLabel">Error!</h5>
-                    <button type="button" class="close" data-dismiss="modal">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">Please fill in all fields.</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-primary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Bootstrap modal for success-->
-            <div
-              class="modal fade"
-              id="successModal"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="successModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="successModalLabel">Success!</h5>
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Your message has been sent successfully.
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-primary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Check Modal -->
-            <div
-              class="modal fade"
-              id="gitCommitModal"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="gitCommitModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="gitCommitModalLabel">
-                      Project - Development Activity
-                    </h5>
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body text-center">
-                    <img
-                      src="image/git-commits.png"
-                      class="img-fluid rounded border shadow-sm"
-                      alt="Git Commits Log"
-                    />
-
-                    <p class="text-muted small mt-3">
-                      Displaying contribution activity for the Private gitlab
-                      repository.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 mt-5">
-            <i class="fa-sharp fa-solid fa-envelope fa-lg"></i>
-            <h4
-              style="
-                display: inline-block;
-                margin-left: 5px;
-                margin-bottom: 0;
-                margin-top: 0;
-              "
-            >
-              Email
-            </h4>
-            <p style="margin-left: 30px; margin-top: 0; margin-bottom: 40px">
-              <a href="mailto:Aslinkarmacharya@gmail.com" class="contact-info"
+    <!-- ─── CONTACT ────────────────────────────────────────────────── -->
+    <section id="contact" class="section contact-section">
+      <div class="section-container contact-grid">
+        <div class="contact-left">
+          <p class="section-label">// LET'S TALK</p>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="contact-intro">
+            Have a project in mind, an opportunity to share, or just want to say
+            hello? Fill in the form and I'll get back to you.
+          </p>
+          <ul class="contact-info-list">
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:aslinkarmacharya@gmail.com"
                 >aslinkarmacharya@gmail.com</a
               >
-            </p>
-
-            <i class="fa-solid fa-phone fa-lg"></i>
-            <h4
-              style="
-                display: inline;
-                margin-left: 5px;
-                margin-bottom: 0;
-                margin-top: 0;
-              "
-            >
-              Phone no.
-            </h4>
-            <p style="margin-left: 30px; margin-top: 0; margin-bottom: 40px">
-              <a href="tel:9821200463" class="contact-info">9821200463</a>
-            </p>
-
-            <i class="fa-brands fa-linkedin fa-lg" style="color: #000000"></i>
-            <h4
-              style="display: inline-block; margin-left: 5px; margin-bottom: 0"
-            >
-              Linked in
-            </h4>
-            <p style="margin-left: 30px; margin-top: 0; margin-bottom: 40px">
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:9821200463">+977 982 120 0463</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin"></i>
               <a
                 href="https://www.linkedin.com/in/AslinKarmacharya"
-                class="contact-info"
                 target="_blank"
                 rel="noopener noreferrer"
+                >linkedin.com/in/AslinKarmacharya</a
               >
-                linkedin.com/in/AslinKarmacharya</a
-              >
-            </p>
-          </div>
+            </li>
+          </ul>
         </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                autocomplete="email"
+              />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="number">Phone</label>
+            <input
+              type="tel"
+              id="number"
+              name="number"
+              placeholder="+977 ..."
+              autocomplete="tel"
+            />
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="What's on your mind?"
+            ></textarea>
+          </div>
+          <p class="form-note">
+            <i class="fa-solid fa-circle-info"></i> Contact form submission is
+            coming soon.
+          </p>
+          <button type="submit" class="btn-submit">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 text-center">
-      <div class="container">
-        <p>&copy;2026 [Copyright Aslin Karmacharya]. All Rights Reserved.</p>
+    <!-- ─── FOOTER ─────────────────────────────────────────────────── -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p class="footer-brand">Aslin Karmacharya</p>
+        <p class="footer-copy">&copy; 2026 · All Rights Reserved</p>
+        <div class="footer-socials">
+          <a href="mailto:aslinkarmacharya@gmail.com" aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/AslinKarmacharya"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/asl1n"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
       </div>
     </footer>
-    <!-- Swiper JS -->
+
+    <!-- ─── GIT COMMIT MODAL ───────────────────────────────────────── -->
+    <div
+      class="modal-backdrop"
+      id="gitCommitModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="gitModalTitle"
+    >
+      <div class="modal-box">
+        <div class="modal-header">
+          <h5 id="gitModalTitle">Project — Development Activity</h5>
+          <button
+            class="modal-close"
+            data-close="gitCommitModal"
+            aria-label="Close"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="image/git-commits.png" alt="Git Commits Log" />
+          <p class="modal-caption">
+            Contribution activity for the private GitLab repository.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
+
     <script>
-      var swiper = new Swiper(".mySwiper1", {
-        slidesPerView: "auto",
-        centeredSlides: false,
-        slidesPerGroupSkip: 2,
-        grabCursor: true,
-        keyboard: {
-          enabled: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          // When window width is >= 768px (sm and above)
-          768: {
-            slidesPerView: 2,
-          },
-          // When window width is >= 992px (md and above)
-          992: {
-            slidesPerView: 3,
-          },
-        },
+      /* ── Navbar scroll effect ── */
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 40);
       });
 
-      var swiper = new Swiper(".mySwiper2", {
-        slidesPerView: "auto",
-        centeredSlides: false,
-        slidesPerGroupSkip: 1,
-        grabCursor: true,
-        keyboard: {
-          enabled: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          // When window width is >= 992px
-          992: {
-            slidesPerView: 2,
-          },
-        },
+      /* ── Mobile nav toggle ── */
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = navMenu.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
       });
-    </script>
-    <!--For email using JS-->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function validateAndSend() {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var number = document.getElementById("number").value;
-        var message = document.getElementById("message").value;
 
-        // Validate fields
-        if (
-          name.trim() === "" ||
-          email.trim() === "" ||
-          number.trim() === "" ||
-          message.trim() === ""
-        ) {
-          $("#fillInModal").modal("show");
-          return;
-        }
-
-        // If all fields are filled, call sendEmail
-        sendEmail();
-      }
-
-      function sendEmail() {
-        Email.send({
-          SecureToken: "af4e13d7-64ea-4a63-bf43-f38ec5d164b7 ",
-          To: "aslinkarmacharya@gmail.com",
-          From: document.getElementById("email").value,
-          Subject: "Contact Form Submission",
-          Body:
-            "Name: " +
-            document.getElementById("name").value +
-            "<br>" +
-            "Email: " +
-            document.getElementById("email").value +
-            "<br>" +
-            "Phone: " +
-            document.getElementById("number").value +
-            "<br>" +
-            "Message: " +
-            document.getElementById("message").value,
-        }).then(function (message) {
-          $("#successModal").modal("show");
+      /* Close menu on nav-link click (mobile) */
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", false);
         });
-      }
+      });
+
+      /* ── Skills Swiper ── */
+      new Swiper(".skillsSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 16,
+        grabCursor: true,
+        loop: true,
+        autoplay: { delay: 2400, disableOnInteraction: false },
+        pagination: { el: ".skills-pagination", clickable: true },
+        breakpoints: {
+          640: { slidesPerView: 3, spaceBetween: 20 },
+          900: { slidesPerView: 4, spaceBetween: 24 },
+          1200: { slidesPerView: 5, spaceBetween: 24 },
+        },
+      });
+
+      /* ── Modal open via data-modal button ── */
+      document.querySelectorAll("[data-modal]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const id = btn.getAttribute("data-modal");
+          document.getElementById(id)?.classList.add("active");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      /* ── Modal close ── */
+      document.querySelectorAll("[data-close]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const id = btn.getAttribute("data-close");
+          document.getElementById(id)?.classList.remove("active");
+          document.body.style.overflow = "";
+        });
+      });
+
+      /* Close on backdrop click */
+      document.querySelectorAll(".modal-backdrop").forEach((backdrop) => {
+        backdrop.addEventListener("click", (e) => {
+          if (e.target === backdrop) {
+            backdrop.classList.remove("active");
+            document.body.style.overflow = "";
+          }
+        });
+      });
+
+      /* Keyboard ESC closes modal */
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          document.querySelectorAll(".modal-backdrop.active").forEach((m) => {
+            m.classList.remove("active");
+            document.body.style.overflow = "";
+          });
+        }
+      });
+
+      /* ── Contact form (static — no submission) ── */
+      document.getElementById("contactForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+
+      /* ── Intersection Observer: fade-in on scroll ── */
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document
+        .querySelectorAll(".project-card, .about-grid, .contact-grid")
+        .forEach((el) => {
+          observer.observe(el);
+        });
     </script>
-    <!-- Google Tag Manager for Google Analytics(noscript) -->
-    <noscript
-      ><iframe
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-5TR2DZHH"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+      ></iframe>
+    </noscript>
   </body>
 </html>
