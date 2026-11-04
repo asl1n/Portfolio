@@ -12,27 +12,27 @@
    ────────────────────────────────────────────────────────────────── */
 window.PROJECT_GALLERIES = {
   office: {
-    heading: "Office Project — Contributor Analytics",
+    heading: "Project — Contributor Analytics",
     slides: [
       {
         title: "Accounting Software",
-        text: "Contributor analytics for the Accounting module.",
-        src: "image/git-commits.png",
+        text: "Contributor analytics for the Accounting Software.",
+        src: "image/accounting-contribution.png",
       },
       {
-        title: "CRM",
-        text: "Contributor analytics for the CRM module.",
-        src: "image/git-commits.png",
+        title: "Dynamic Websites",
+        text: "Contributor analytics for the Dynamic Websites.",
+        src: "image/dynamic-websites.png",
       },
       {
-        title: "Inventory Management",
-        text: "Contributor analytics for the Inventory module.",
-        src: "image/git-commits.png",
+        title: "Tender Management",
+        text: "Contributor analytics for the Tender Management module.",
+        src: "image/tender-software.png",
       },
       {
-        title: "Billing & Invoicing",
-        text: "Contributor analytics for the Billing module.",
-        src: "image/git-commits.png",
+        title: "Fleet Management",
+        text: "Contributor analytics for the Fleet Management module.",
+        src: "image/fleet-management.png",
       },
     ],
   },
